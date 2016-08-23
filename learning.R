@@ -64,6 +64,7 @@ c <-a %o% b
 # working with list
 Lst <- list(name="Fred", wife="Mary", no.children=3,
             child.ages=c(4,7,9))
+
 # data frame : 
 #   make a data frame: each column is a list of obs. values for a var
 # each row is an obs
@@ -91,16 +92,6 @@ dat.xls <- read.xlsx(f, sheetIndex=1)
 x1 = scan() # numeric data
 y <- scan(what=" ") # string data
 
-# various about *apply family 
-# http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega
-section1 <- c(57.3, 70.6, 73.9, 61.4, 63.0, 66.6, 74.8, 71.8, 63.2, 
-              72.3, 61.9, 70.0)
-section2 <- c(74.6, 74.5, 75.9, 77.4, 79.6, 70.2, 67.5, 75.5, 68.2, 
-              81.0, 69.6, 75.6,  69.5, 72.4, 77.1)
-section3 <- c(80.5, 79.2, 83.6, 74.9, 81.9, 80.3, 79.5, 77.3, 92.7, 
-              76.4, 82.0, 68.9, 77.6, 74.6)
-allSections <- list(section1,section2,section3)
-section_means <- sapply(allSections, mean)
 
 # lapply - When you want to apply a function to each element 
 # of a list in turn and get a list back.
@@ -136,3 +127,6 @@ mtcars[1:5,]
 summary(mtcars)
 # histogram 
 hist(mtcars$mpg)
+
+
+group <- gl(2, 10, 20, labels = c("Ctl","Trt"))
