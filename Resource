@@ -1,0 +1,6 @@
+# youtube: MarinStatsLectures
+
+Multiple Regression Analysis in R - First Steps
+# http://feliperego.github.io/blog/
+# https://rstudio-pubs-static.s3.amazonaws.com/65641_88a692252c6c4f2ab279d115e59e6767.html
+
